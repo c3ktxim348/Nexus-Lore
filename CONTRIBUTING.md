@@ -16,8 +16,12 @@ cd backend
 python -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/uvicorn app.main:app --reload
+```
 
-cd ../frontend
+保持后端终端运行，另开一个终端，从项目根目录启动前端：
+
+```bash
+cd frontend
 npm ci
 npm run dev
 ```
